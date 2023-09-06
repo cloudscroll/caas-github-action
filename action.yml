@@ -1,0 +1,20 @@
+name: "Github Action for CAAS"
+description: "build and test after provide coverage result"
+inputs:
+  maven-goal:         # maven goal
+    description: 'User-defined maven goal'
+    reqired: false
+    default: 'compile test package'
+outputs:
+  caas-coverage-badge:    # caas coverage badge
+    description: 'CAAS Coverage Badge'
+    value: ${{steps.generate-caas-badge-url.outputs.caas-badge}}
+runs:
+  using: 'composite'
+  steps:
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - run: prepare_caas.sh
+      shell: bash
+    - run: build_caas.sh ${{inputs.maven-goal}}
+      shell: bash
