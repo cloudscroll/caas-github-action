@@ -37,8 +37,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: "Github Action for CAAS"
-      uses: bugstone/caas-github-action@main
+    - name: "Github Action with CAAS"
+      uses: cloudscroll/caas-github-action@main
       env:
         CAAS_API_KEY: ${{ secrets.CAAS_API_KEY }}
 ```
