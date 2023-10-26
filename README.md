@@ -42,3 +42,15 @@ jobs:
       env:
         CAAS_API_KEY: ${{ secrets.CAAS_API_KEY }}
 ```
+
+##  Badge:
+To register a badge, follow the steps below:
+1. Access to [Cover as a Service](https://cloudscroll.io/).
+2. Login with your account.
+3. Find a workspace to connect to in My Workspaces.
+4. Copy the code from the Badge section on the workspace settings page.
+5. Paste the copied Badge code into your Readme file.
+6. Click on the badge to go to the connected workspace and check coverage
+
+### Badge Example:
+Click to coverage badge: [![Coverage](https://api.cloudscroll.io/workspace-management/workspace/badge?domainName=pandora-coverage)](https://app.cloudscroll.io/pandora-coverage)
