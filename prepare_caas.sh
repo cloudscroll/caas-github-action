@@ -1,8 +1,8 @@
 echo "Downloading jacov-maven-plugin.jar"
-curl -o jacov-maven-plugin.jar "https://suresofttech.hanbiro.net/cgi-bin/cloudGetLink.cgi?id=66973&key=717959419dd90a814136bf2acdc39cd9"
+curl -o jacov-maven-plugin.jar "https://kr.object.ncloudstorage.com/caas-dev-bucket/download/jacov-maven-plugin.jar"
 echo "Complete download. (jacov-maven-plugin)"
 echo "Downloading java-runtime.jar"
-curl -o java-runtime.jar "https://suresofttech.hanbiro.net/cgi-bin/cloudGetLink.cgi?id=66972&key=ddf8687c7c4a984bbc6db42bf6053ded"
+curl -o java-runtime.jar "https://kr.object.ncloudstorage.com/caas-dev-bucket/download/java-runtime.jar"
 echo "Complete download. (java-runtime)"
 
 echo "Install maven plugins (jacov-maven-plugin)"
